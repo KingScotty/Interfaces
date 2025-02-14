@@ -1,4 +1,4 @@
-public interface Fliter {
+public interface Filter {
 
     boolean accept(Object x);
 }
