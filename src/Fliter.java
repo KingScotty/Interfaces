@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
+public interface Fliter {
 
-public class Fliter {
+    boolean accept(Object x);
 }
