@@ -1,0 +1,28 @@
+@startuml
+
+interface Filter {
+    + boolean accept(Object x)
+}
+
+class BigRectangleFilter {
+    + boolean accept(Object x)
+}
+
+class BigRectLister {
+    + void main(String[] args)
+}
+
+class ShortWordFilter {
+    + boolean accept(Object x)
+}
+
+class ShortLister {
+    + void main(String[] args)
+}
+
+Filter <|.. BigRectangleFilter
+Filter <|.. ShortWordFilter
+BigRectLister --> BigRectangleFilter
+ShortLister --> ShortWordFilter
+
+@enduml
